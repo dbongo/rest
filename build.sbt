@@ -32,11 +32,13 @@ libraryDependencies ++= {
   val akkaV = "2.3.4"
   Seq(
     "org.slf4j"         %  "slf4j-simple"  % "1.7.2",
-    "io.spray"          %% "spray-can"     % sprayV  withSources(),
-    "io.spray"          %% "spray-routing" % sprayV  withSources(),
     "org.json4s"        %% "json4s-native" % "3.2.9",
-    "com.typesafe.akka" %% "akka-actor"    % akkaV withSources(),
-    "com.typesafe.akka" %% "akka-slf4j"    % akkaV withSources()
+    "org.reactivemongo" %% "reactivemongo" % "0.11.0-SNAPSHOT",
+    "com.typesafe.play" %% "play-json"     % "2.3.1",
+    "io.spray"          %% "spray-can"     % sprayV withSources(),
+    "io.spray"          %% "spray-routing" % sprayV withSources(),
+    "com.typesafe.akka" %% "akka-actor"    % akkaV  withSources(),
+    "com.typesafe.akka" %% "akka-slf4j"    % akkaV  withSources()
   ) ++ scalaTesting
 }
 
